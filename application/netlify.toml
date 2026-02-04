@@ -1,8 +1,6 @@
 [build]
   command = "npm run build"
-  publish = ".next/standalone"
+  publish = ".netlify/output"
 
-[[redirects]]
-  from = "/*"
-  to = "/"
-  status = 200
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
